@@ -1,0 +1,29 @@
+/* Tag Elemnt selector */
+
+/* h1{
+    background-color: pink;
+}
+
+ul{
+    background-color: aquamarine;
+} */
+
+/* Id base element selector */
+
+/* #first{
+    background-color: blueviolet;
+}
+
+#second{
+    background-color: aquamarine;
+} */
+
+/* Class base selector */
+
+.third{
+    background-color: green;
+}
+
+h1,.fourth,#first {
+    background-color: blueviolet;
+}
