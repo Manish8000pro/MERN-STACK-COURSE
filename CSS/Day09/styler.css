@@ -1,0 +1,45 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+h1{
+    background-color: green;
+    /* display: inline;
+    position: relative;
+    left: 40%; */
+
+}
+div{
+    background-color: aquamarine;
+    height: 1200px;
+    position: relative;
+}
+
+h2{
+    background-color: orange;
+    position: relative;
+    /* left: 20%; top: 350px; */
+    /* display: inline; */
+}
+h3{
+    background-color: blueviolet;
+    position: fixed;
+    top: 0px;
+    /* z-index: 20; */
+}
+
+h4{
+    background-color: brown;
+    position: sticky;
+    top: 0px;
+}
+
+p{
+    background-color: lime;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    margin: 0px;
+    z-index: 10;
+}
