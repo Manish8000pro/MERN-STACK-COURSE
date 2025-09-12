@@ -1,0 +1,36 @@
+#container{
+    height: 300px;
+    width: 400px;
+    background-color: rgb(1, 1, 82);
+    position: relative;
+    
+}
+.Box{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+#box1{
+    height: 80px;
+    width: 400px;
+    background-color: red;
+}
+
+#box2{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 150px;
+    top: 98px;
+}
+
+#box3{
+    height: 80px;
+    width: 400px;
+    background-color: red;
+    position: absolute;
+    bottom: 0px;
+}
