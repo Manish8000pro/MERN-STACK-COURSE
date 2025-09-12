@@ -1,0 +1,22 @@
+#box{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: relative;
+}
+
+#container{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+#circle{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
