@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(23, 248, 226);
+    color: white;
+    /* box-shadow: rgb(204, 149, 10) 0px 0px 15px 10px;
+    border-radius: 50%; */
+    overflow: scroll;
+}
