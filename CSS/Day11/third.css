@@ -8,10 +8,48 @@ body{
     background-color: black;
 }
 .container{
-    height: 800px;
+   
+    height: 600px;
     width: 800px;
     color: white;
+    font-size: 40px;
     display: grid;
-    grid-template-rows: 3fr 4fr 4fr;
-    grid-column: 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    
+    
+}
+.Box{
+    background-color: blueviolet;
+}
+.first{
+    grid-row: 1/4;
+    background-color: green;
+}
+.second{
+    grid-column: 2/4;
+    background-color: green;
+}
+.third{
+    background-color: red;
+}
+.fourth{
+    background-color: yellow;
+}
+.fifth{
+    background-color:red ;
+}
+.sixth{
+    grid-row: 2/4;
+    grid-column: 4;
+    background-color: green;
+    
+}
+.seventh{
+    background-color: red;
+}
+.eight{
+    background-color: yellow;
 }
