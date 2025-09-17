@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    height: 100vh; */
+    padding-top: 10px ;
+}
+.container{
+    background-color: rgb(255, 255, 255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.378);
+    font-size: 40px;
+    padding: 10px;
+    color: rgb(218, 85, 19);
+    width: 50%;
+    border-radius: 5px;
+    white-space: nowrap;
+   
+}
+
+p{
+    margin: 40%;
+}
