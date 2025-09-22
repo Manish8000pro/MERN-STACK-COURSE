@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 10px 10px 20px #cadcf8, -10px -10px 20px #ebf3ff;
+}
+
+.username-input{
+    background-color: #e0e5ec;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px #c1d7f8, -10px -10px 20px #bfd6f9;
+}
+
+.signin{
+    cursor: pointer;
+    width: 80%;
+}
+
+.input-card{
+    height: 300px;
+    width: 300px;
+    background-color: #e0e5ec;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
