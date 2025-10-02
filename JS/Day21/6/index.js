@@ -52,5 +52,33 @@
 // const names = "Manish,Dinesh,Mamta, suraj, bhanu"
 // console.log(names.split(","))
 
-const now = new Date();
-console.log(now.toString())
+// const now = new Date();
+// console.log(now.toString())
+// console.log(now.toISOString())
+// console.log(now.toLocaleString())
+// console.log(now.toLocaleTimeString())
+// console.log(now.toLocaleDateString())
+
+// const now = new Date();
+
+// These outputs according to the local time 
+// console.log(now.getDate())
+// console.log(now.getDay())
+// console.log(now.getFullYear())
+// console.log(now.getMonth())
+// console.log(now.getHours())
+// console.log(now.getMinutes())
+
+
+// Days ; Mon , Tue : 1 based 
+
+// Month : 0 based
+
+// const now = new Date(2025,8,17,17,25,134)
+// console.log(now.toString())
+
+const now = Date.now()
+const dates = new Date(0)
+// console.log(dates.toString())
+console.log(dates.toString())
+// 1759407386048
