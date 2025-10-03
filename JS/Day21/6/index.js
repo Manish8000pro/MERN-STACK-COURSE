@@ -52,6 +52,8 @@
 // const names = "Manish,Dinesh,Mamta, suraj, bhanu"
 // console.log(names.split(","))
 
+// Date obect
+
 // const now = new Date();
 // console.log(now.toString())
 // console.log(now.toISOString())
