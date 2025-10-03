@@ -78,7 +78,10 @@
 // console.log(now.toString())
 
 const now = Date.now()
-const dates = new Date(0)
+const dates = new Date(155578123698)
 // console.log(dates.toString())
-console.log(dates.toString())
+// dates.setMonth(4)
+// dates.setHours(22)
+console.log(dates.toLocaleString())
+
 // 1759407386048
