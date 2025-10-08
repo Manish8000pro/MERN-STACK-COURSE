@@ -61,12 +61,29 @@
 // const arr3 = [...arr,...arr2,...arr4]
 // console.log(arr3)
 
-const names = ["Manish", "Charlie","Alice","Guru", "Rama", "Alice"];
+// const names = ["Manish", "Charlie","Alice","Guru", "Rama", "Alice"];
 
 // console.log(names.toString())
 // console.log(names.join("-"))
 // console.log(names.lastIndexOf("Alice"))
 // console.log(names.includes("Alice"))
 
-names.sort();
-console.log(names)
+// names.sort();
+// names.reverse()
+// console.log(names)
+
+// const arr = [101,80,70,90,55]
+// const arr = ["Manish","Dinesh","Krishan",40, 20,]
+// arr.sort();
+// console.log(arr)
+
+
+// acending order 
+// const arr = [60,40,20,80, 70,50]
+// arr.sort((a,b)=>b-a);
+// console.log(arr);
+
+const arr = [30,59,69,70,[44,66,[55, 33],23],20,90]
+const a = arr.flat(Infinity);
+console.log(a);
+// console.log(arr[5])
