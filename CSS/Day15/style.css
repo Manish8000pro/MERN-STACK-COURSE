@@ -269,7 +269,7 @@ nav a{
     border-radius: 12px;
     border: 1px solid #3a3a3a;
     overflow: hidden;
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
+    transition: transform 0.4s ease,box-shadow 0.5s ease;
 }
 
 .project:hover{
