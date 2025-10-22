@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#parent{
+    height: 400px;
+    width: 300px;
+    border: 2px solid blueviolet;
+    background-color: rgba(51, 45, 57, 0.773);
+    /* margin: 60px; */
+    padding-top: 70px;
+    padding-left: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 50px 5px rgba(146, 130, 173, 0.823);
+}
