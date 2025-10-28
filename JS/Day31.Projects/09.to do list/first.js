@@ -18,16 +18,19 @@ form.addEventListener('submit',(e)=>{
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = "Delete";
-    doneButton.style.width = "30px";
-    doneButton.style.marginRight = "20px";
+    deleteButton.style.width = "50px";
+    deleteButton.style.marginRight = "20px";
+    deleteButton.style.marginTop = "20px";
 
     const doneButton = document.createElement('button');
     doneButton.textContent = "Done";
-    doneButton.style.width = "30px";
-    doneButton.style.marginRight = "20px"
+    doneButton.style.width = "50px";
+    doneButton.style.marginRight = "20px";
+    doneButton.style.marginTop = "20px";
 
     doneButton.addEventListener('click',()=>{
-        task.style.textDecoration = "line-through"
+        task.style.textDecoration = "line-through";
+        task.style.color = "green"
     })
 
     deleteButton.addEventListener('click',()=>{
@@ -37,4 +40,6 @@ form.addEventListener('submit',(e)=>{
     parent.append(task,doneButton,deleteButton);
 
     allTask.append(parent);
+    
+    form.reset();
 })
