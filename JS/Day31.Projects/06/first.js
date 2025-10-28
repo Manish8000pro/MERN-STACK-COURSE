@@ -1,5 +1,5 @@
 setInterval(()=>{
-    const result = document.getElementById("Parent")
+    const result = document.getElementById("result")
     const currentTime = Date.now()
 
     const OlympiceTime = new Date(2028,6,14).getTime();
@@ -23,6 +23,8 @@ setInterval(()=>{
 
 
     result.textContent = `${day}:Days ${hour}:Hours ${minute}:Minutes ${sec}:Seconds`;
+    result.style.color = "whitesmoke";
+    result.style.marginLeft = "25px"
 },1000)
 
 
