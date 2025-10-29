@@ -38,3 +38,104 @@
 // }).catch((error)=>{
 //     console.log(error);
 // })
+
+
+// zomato application 
+
+const OrderDetail={
+    orderId: 124456,
+    Food: ["Pizza","friedRice","coke"],
+    cost: 630,
+    customer_name: "Manish",
+    customer_location: "Palsana",
+    restaurant_location: "Rajasthan"
+
+}
+
+function placedOrder(OrderDetail){
+    console.log(`${OrderDetail.cost} Payment is in Prograss`)
+
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+
+        if(Math.random()>0.01){    
+        console.log("Payment is Recived and order get Placed")
+        OrderDetail.status = true;
+        resolve(OrderDetail)
+        }
+        else{
+            reject("Payment is Failed");
+        }
+    },3000)
+    })
+
+    
+}
+
+function preparingOrder(OrderDetail){
+    console.log(`Your Food Prepration Started ${OrderDetail.Food}`);
+
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        
+        if(Math.random()>0.05){    
+        console.log("Your Order is now Prepared")
+        OrderDetail.token = 124;
+        resolve(OrderDetail);
+        }
+        else{
+            reject("Food item is not available")
+        }
+    },3000)
+    })
+
+    
+}
+
+function pickupOrder(OrderDetail){
+    console.log(`Delivery Boy is on a way to Pickup order from ${OrderDetail.restaurant_location}`);
+
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+
+            if(Math.random()>0.05){
+            console.log("I have Pickuped the Order")
+            OrderDetail.received = true;
+            resolve(OrderDetail);
+            }
+            else{
+                reject("Delivery boy Unable to reach restaurant")
+            }
+        },6000)
+    })
+
+    
+}
+
+function deliverOrder(OrderDetail){
+    console.log(`I am on the way to deliver order ${OrderDetail.customer_location}`)
+
+    return new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+        console.log("Order Delivered succsfully");
+        OrderDetail.delivery = true;
+        resolve(OrderDetail);
+    },5000)  
+    })
+
+    
+}
+
+placedOrder(OrderDetail)
+.then((OrderDetail)=>preparingOrder(OrderDetail))
+.then((OrderDetail)=>pickupOrder(OrderDetail))
+.then((OrderDetail)=>deliverOrder(OrderDetail))
+.then((OrderDetail)=>{
+    console.log(OrderDetail)
+})
+.catch((error)=>{
+    console.log("Error:",error);
+})
+.finally(()=>{
+    console.log("I am doing CleanUp")
+})
