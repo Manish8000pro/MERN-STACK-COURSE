@@ -23,7 +23,7 @@ async function github() {
         const response = await fetch("https://api.github.com/users")
 
         if(!response.ok){
-            throw new Error("Data is no persent")
+            throw new Error("Data is not persent")
         }
         
         const data = await response.json();
