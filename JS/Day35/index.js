@@ -19,13 +19,19 @@
 // .then((data)=>console.log(data));
 
 async function github() {
-    const response = await fetch("https://api.github.com/users")
-    const data = await response.json();
-    // console.log(data);
+    try{
+        const response = await fetch("https://api.github.com/users")
 
-    const parent = document.getElementById("first")
+        if(!response.ok){
+            throw new Error("Data is no persent")
+        }
+        
+        const data = await response.json();
+        // console.log(data);
 
-    for(let user of data){
+        const parent = document.getElementById("first")
+
+       for(let user of data){
        const element =  document.createElement("div")
        element.classList.add("user")
 
@@ -43,6 +49,11 @@ async function github() {
 
        parent.append(element)
     }
+    }
+    catch(error){
+        console.log("error");
+    }
+    
 }
 
 github();
