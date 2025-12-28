@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Food from "./Food";
 
 function List(){
     const [foodItems,setFoodItems] = useState(["Apple","Orange","Banana"]);
@@ -11,7 +12,9 @@ function List(){
     return(
         <>
         <button onClick={handleChange}>Increment</button>
-        <Food></Food>
+        <Food foods={foodItems}></Food>
         </>
     )
 }
+
+export default List();
