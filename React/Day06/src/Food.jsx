@@ -4,10 +4,10 @@ function Food({foods}){
     return(
         <>
         <ul>
-            {foods.map(food=> <li>{food}</li>)}
+            {foods.map(foods=><li>{foods}</li>)}
         </ul>
         </>
     )
 }
 
-export default Food();
+export default Food;

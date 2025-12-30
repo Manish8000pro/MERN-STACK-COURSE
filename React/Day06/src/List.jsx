@@ -5,7 +5,7 @@ function List(){
     const [foodItems,setFoodItems] = useState(["Apple","Orange","Banana"]);
 
     function handleChange(){
-        setFoodItems(["Mango",...foodItems])
+        setFoodItems(["Mango","Guava",...foodItems])
     }
 
 
@@ -17,4 +17,4 @@ function List(){
     )
 }
 
-export default List();
+export default List;
