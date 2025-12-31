@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import Sum from './Sum';
-
+import Post from './Post';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,6 +51,10 @@ function App() {
     return total;
   },[number])
   
+  const obj = useMemo(()=>{
+    return {name:"Manish",age:20}
+  })
+
   // const prime = calculatePrime();
   
   console.log("App render")
@@ -63,6 +67,7 @@ function App() {
       <h3>Total Prime Number:{prime} </h3>
       <button onClick={handleClick}>Click</button>
       <Sum number={number}></Sum>
+      <Post value={obj}></Post>
     </>
   )
 }
