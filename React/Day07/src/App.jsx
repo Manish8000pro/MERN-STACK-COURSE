@@ -1,11 +1,58 @@
-import { useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import Sum from './Sum';
 
 
 function App() {
   const [count, setCount] = useState(0);
-  const [number,setNumber] = useState(1000)
+  const [number,setNumber] = useState(100000);
 
+  // function calculatePrime(){
+  //   let total = 0;
+
+  //   if(number>1)
+  //     total++;
+
+  //   for(let i=3;i<=number;i++){
+  //     total++;
+  //     for(let j=2;j<i;j++){
+  //       if(i%j==0){
+  //       total--;
+  //       break;
+  //     }
+        
+  //     }
+  //   }
+
+  //   return total;
+  // }
+
+  const handleClick = useCallback(()=>{
+     console.log("Handl Click",count);
+  },[count])
+
+  const prime = useMemo(()=>{
+
+    let total = 0;
+
+    if(number>1)
+      total++;
+
+    for(let i=3;i<=number;i++){
+      total++;
+      for(let j=2;j<i;j++){
+        if(i%j==0){
+        total--;
+        break;
+      }
+        
+      }
+    }
+
+    return total;
+  },[number])
+  
+  // const prime = calculatePrime();
+  
   console.log("App render")
   return (
     <>
@@ -13,6 +60,8 @@ function App() {
       <button onClick={()=>setCount(count+1)}>Increment</button>
       <h2>Your current Number:{number} </h2>
       <button onClick={()=>setNumber(number+100)}>Increment Number</button>
+      <h3>Total Prime Number:{prime} </h3>
+      <button onClick={handleClick}>Click</button>
       <Sum number={number}></Sum>
     </>
   )

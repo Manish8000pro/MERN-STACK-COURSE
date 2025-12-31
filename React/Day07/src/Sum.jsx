@@ -1,15 +1,15 @@
 import React from "react";
 
-const Sum = React.memo((number)=>{
+const Sum = React.memo(({number})=>{
     function calculateSum(){
 
-        let sum = 0;
+        let Sum = 0;
 
         for(let i=1;i<=number;i++){
-            sum+=i;
+            Sum+=i;
         }
 
-        return sum;
+        return Sum;
     }
 
     const total = calculateSum();
