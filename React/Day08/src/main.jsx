@@ -6,8 +6,8 @@ import Video from './Video.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    // <App />
+    <App />
     // <Login></Login>
-    <Video></Video>
+    // <Video></Video>
  
 )

@@ -14,7 +14,7 @@ function App() {
 
     intervalIdRef.current = setInterval(()=>{
       setTime(time=>time+1);
-    },1000);
+    },500);
   }
 
   function handleStop(){
