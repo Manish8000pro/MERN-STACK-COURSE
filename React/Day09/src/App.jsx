@@ -12,6 +12,7 @@ function App() {
     console.log(name);
     console.log(age);
     console.log(password);
+    
   }
 
   return(
@@ -26,7 +27,7 @@ function App() {
       <div>
         <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
       </div>
-      <button>Submit</button>
+      <button type='submit'>Submit</button>
     </form>
     </>
   )

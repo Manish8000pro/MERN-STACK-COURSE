@@ -1,4 +1,5 @@
-import { useForm } from "react-hook-form"
+import { useForm } from "react-hook-form";
+import React from "react";
 
 function Form(){
     
@@ -8,23 +9,24 @@ function Form(){
     function submitForm(data){
         console.log(data);
     }
+    console.log("render");
 
     return(
         <>
         <form onSubmit={handleSubmit(submitForm)}>
         <div>
             <label htmlFor="first">Name:</label>
-            <input id="first" {...register('name')} />
+            <input type="text" id="first" {...register('name')} />
         </div>
         <div>
             <label htmlFor="second">Age:</label>
-            <input id="second" {...register('age')} />
+            <input type="number" id="second" {...register('age')} />
         </div>
         <div>
             <label htmlFor="third">Password:</label>
-            <input id="third" {...register('password')} />
+            <input type="password" id="third" {...register('password')} />
         </div>
-        <button>Submit</button>
+        <button type="submit">Submit</button>
         </form>
         </>
     )
