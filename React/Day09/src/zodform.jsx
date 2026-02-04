@@ -3,12 +3,17 @@ import React from "react";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod'
 
-const formSchema = zod.object({
+const formSchema = z.object ( {
     name:z.string().min(3,"Minimum Length should be 5").max(20,"Maximum Lenght should be 20"),
     age:z.coerce.number().min(10,"Minimum age should be 10").max(90,"Maximum age should be 90"),
-    password:z.password().min(5,"Minimum Length should be 5").max(10,"Maximum length should be 10"),
-    email: z.email("Email is invalid")
+    password:z.string().min(5,"Minimum Length should be 5").max(10,"Maximum length should be 10"),
+    confirm:z.string(),
+    email: z.string("Email is invalid")
 })
+.refine((data) => data.password === data.confirm,{
+    message: "Passwords do not match",
+    path: ["confirm"],
+  });
 
 function ZodForm(){
     
@@ -44,6 +49,11 @@ function ZodForm(){
             <label htmlFor="third">Password:</label>
             <input type="password" id="third" {...register('password')} />
             {errors.password&&<span>{errors.password.message} </span>}
+        </div>
+        <div>
+            <label htmlFor="fifth">Confirm Password:</label>
+            <input type="password" id="fifth" {...register('confirm')} />
+            {errors.confirm&&<span>{errors.confirm.message} </span>}
         </div>
         
         <button type="submit">Submit</button>
