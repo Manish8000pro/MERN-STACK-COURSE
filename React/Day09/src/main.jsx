@@ -7,7 +7,7 @@ import ZodForm from './zodform.jsx'
 
 createRoot(document.getElementById('root')).render(
   
-    <ZodFormForm />
+    <ZodForm />
   
 )
   
