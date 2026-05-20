@@ -607,3 +607,32 @@ html{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+#progress-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 0%;
+    background: #ffbf00;
+    z-index: 9999;
+}
+
+/* Impprovement */
+.hidden{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TYPING ANIMATION */
+#typing-text{
+    color: #eff37e;
+    min-height: 40px;
+}
