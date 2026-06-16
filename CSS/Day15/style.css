@@ -636,3 +636,12 @@ html{
     color: #ffbf00;
     min-height: 40px;
 }
+
+/* Project image section */
+.project img{
+   transition: transform 0.5s ease;
+}
+
+.project:hover img{
+   transform: scale(1.1);
+}
