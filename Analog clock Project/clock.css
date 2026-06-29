@@ -33,8 +33,8 @@ body{
 }
 
 .hours{
-    height: 14rem;
-    width: 14rem;
+    height: 11rem;
+    width: 11rem;
 }
 .hours::before{
     content: "";
