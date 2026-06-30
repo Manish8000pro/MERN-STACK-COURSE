@@ -9,6 +9,7 @@ function clock(){
     let mint = date.getMinutes();
     let sec = date.getSeconds();
 
+    
     hours.style.transform = `rotateZ(${hr*30 + mint/12}deg)`;
     minute.style.transform = `rotateZ(${mint*6}deg)`;
     second.style.transform = `rotateZ(${sec*6}deg)`;
