@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const myServer = http.createServer((req,res)=>{
     if(req.url === "/favicon.ico") return res.end();
-    const log = `${Date.now()}: ${req.url} New Req Recived\n`;
+    const log = `${Date.now()}: ${req.method } New Req Recived\n`;
     fs.appendFile('log.txt',log,(err,data)=>{
         switch(req.url){
             case '/': res.end("Home Page ");
