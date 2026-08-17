@@ -12,7 +12,7 @@ const myServer = http.createServer((req,res)=>{
             break
             default:res.end("404 Not Found");
         }
-         
+        
     })
     
 }); 
