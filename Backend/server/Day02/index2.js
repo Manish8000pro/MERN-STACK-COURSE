@@ -6,7 +6,7 @@ const myServer = http.createServer((req,res)=>{
     const log = `${Date.now()}: ${req.method } New Req Recived\n`;
     fs.appendFile('log.txt',log,(err,data)=>{
         switch(req.url){
-            case '/': res.end("Home Page ");
+            case '/': res.end("Home Page "); 
             break
             case '/about' : res.end("I am Manish kumawat");
             break
